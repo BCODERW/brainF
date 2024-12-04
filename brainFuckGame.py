@@ -156,7 +156,6 @@ success = False
 while not success:
     for i in range(10):
         cells[i] = 0
-    print('Written output: ')
     myCode = list(input('Enter your brainF*** code here: '))
     if len(myCode) >= 0:
         codeRan = mainCode(myCode,cells,sel)

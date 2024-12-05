@@ -92,6 +92,7 @@ while not success:
 print('You did it! On to the next one')
 print('Now cell one will contain 5. With 3 characters get it to 0')
 #answer [-]
+sel = 0
 success = False
 while not success:
     cells[0] = 5
@@ -112,6 +113,7 @@ while not success:
 print('You did it again! Get ready for the next one')
 print('This one is very similar to the previous, but every cell has a value of 5, and you get 4 characters to get them all to 0')
 #answer [->]
+sel = 0
 success = False
 while not success:
     for i in range(10):
@@ -135,6 +137,7 @@ while not success:
 print('Amazing! If you don\'t have any experience with brainF*** then you are entering the challenge section')
 print('Get cell 1 to contain the number 100 with less than 50 characters')
 #answer ++++++++++[->++++++++++<]>[-<+>] - 32 characters
+sel = 0
 success = False
 while not success:
     for i in range(10):
@@ -155,6 +158,7 @@ while not success:
 print('Impressive, now on to the final tasks. Usually you need to know the ascii values to output characters. For this a is 1, b is 2, etc, z being 26')
 print('Say hi')
 #an answer ++++++++.[-]+++++++++.[-]
+sel = 0
 success = False
 while not success:
     for i in range(10):
@@ -174,6 +178,7 @@ while not success:
     else:
         print('Uh oh I havent seen any code that bad, ever')
 print('For the ultimate challenge, print out brainF*** code that would result in 81 in cell 1, with less than 100 characters, but the code you write to write the code has no character limit. + is 68, - 69, [ 70, ] 71, > 72, < 73, . 74')
+sel = 0
 success = False
 while not success:
     for i in range(10):

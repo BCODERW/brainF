@@ -75,7 +75,7 @@ def mainCode(code,cells,selected):
     return returnList
 sel = 0
 success = False
-print('Output 3 in cell 0')
+print('Output 3 in cell 1')
 #answer(effecient) +++
 while not success:
     myCode = list(input('Enter your brainF*** code here: '))
@@ -88,6 +88,7 @@ while not success:
         success = True
     else:
         print('You failed, try again')
+        cells = [0,0,0,0,0,0,0,0,0,0]
 print('You did it! On to the next one')
 print('Now cell one will contain 5. With 3 characters get it to 0')
 #answer [-]
@@ -105,6 +106,7 @@ while not success:
             success = True
         else:
             print('You failed, try again')
+            cells = [5,0,0,0,0,0,0,0,0,0]
     else:
         print('It needs to have 3 characters only, try again')
 print('You did it again! Get ready for the next one')
@@ -126,6 +128,7 @@ while not success:
             if cells[i] != 0:
                 success = False
         if not success:
+            cells = [5,5,5,5,5,5,5,5,5,5]
             print('You failed, try again')
     else:
         print('It needs to have 4 characters only, try again')

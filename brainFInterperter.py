@@ -77,8 +77,8 @@ def mainCode(code,cells,selected):
 sel = 0
 while True:
   myCode = list(input('Enter your brainFuck code here: '))
+  codeRan = mainCode(myCode,cells,sel)
   print('Your output: ')
   print(codeRan[0])
   cells = codeRan[0]
   sel = codeRan[1]
-                

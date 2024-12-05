@@ -89,6 +89,7 @@ while not success:
     else:
         print('You failed, try again')
         cells = [0,0,0,0,0,0,0,0,0,0]
+        sel = 0
 print('You did it! On to the next one')
 print('Now cell one will contain 5. With 3 characters get it to 0')
 #answer [-]
@@ -107,9 +108,12 @@ while not success:
             success = True
         else:
             print('You failed, try again')
+            sel = 0
             cells = [5,0,0,0,0,0,0,0,0,0]
     else:
         print('It needs to have 3 characters only, try again')
+        sel = 0
+        cells = [5,0,0,0,0,0,0,0,0,0]
 print('You did it again! Get ready for the next one')
 print('This one is very similar to the previous, but every cell has a value of 5, and you get 4 characters to get them all to 0')
 #answer [->]
@@ -132,8 +136,11 @@ while not success:
         if not success:
             cells = [5,5,5,5,5,5,5,5,5,5]
             print('You failed, try again')
+            sel = 0
     else:
         print('It needs to have 4 characters only, try again')
+        sel = 0
+        cells = [5,5,5,5,5,5,5,5,5,5]
 print('Amazing! If you don\'t have any experience with brainF*** then you are entering the challenge section')
 print('Get cell 1 to contain the number 100 with less than 50 characters')
 #answer ++++++++++[->++++++++++<]>[-<+>] - 32 characters
@@ -153,8 +160,12 @@ while not success:
             success = True
         else:
             print('You failed, try again')
+            sel = 0
+            cells = [0,0,0,0,0,0,0,0,0,0]
     else:
         print('It needs to have less than 50 characters only, try again')
+        sel = 0
+        cells = [0,0,0,0,0,0,0,0,0,0]
 print('Impressive, now on to the final tasks. Usually you need to know the ascii values to output characters. For this a is 1, b is 2, etc, z being 26')
 print('Say hi')
 #an answer ++++++++.[-]+++++++++.[-]
@@ -175,6 +186,8 @@ while not success:
             success = True
         else:
             print('Not quite, please try again')
+            sel = 0
+            cells = [0,0,0,0,0,0,0,0,0,0]
     else:
         print('Uh oh I havent seen any code that bad, ever')
 print('For the ultimate challenge, print out brainF*** code that would result in 81 in cell 1, with less than 81 characters, but the code you write to write the code has no character limit. + is 68, - 69, [ 70, ] 71, > 72, < 73, . 74')
@@ -190,11 +203,15 @@ while not success:
     cells = codeRan[0]
     sel = codeRan[1]
     Print = codeRan[2]
-    if(list(Print).length() < 81):
+    if(len(list(Print)) < 81):
         if(mainCode(Print,[0,0,0,0,0,0,0,0,0,0],0)[0][0] == 81):
             success = True
         else:
             print('Not quite, but what do you expect, it\'s pretty dang difficult')
+            sel = 0
+            cells = [0,0,0,0,0,0,0,0,0,0]
     else:
         print('The printed code had 81 or more characters. The printed code can be at most 80 characters. Try again!')
+        sel = 0
+        cells = [0,0,0,0,0,0,0,0,0,0]
 print('Amazing! If you did this without any converting script, I can\'t imagine the dedication you have')

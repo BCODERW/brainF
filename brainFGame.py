@@ -177,7 +177,7 @@ while not success:
             print('Not quite, please try again')
     else:
         print('Uh oh I havent seen any code that bad, ever')
-print('For the ultimate challenge, print out brainF*** code that would result in 81 in cell 1, with less than 100 characters, but the code you write to write the code has no character limit. + is 68, - 69, [ 70, ] 71, > 72, < 73, . 74')
+print('For the ultimate challenge, print out brainF*** code that would result in 81 in cell 1, with less than 81 characters, but the code you write to write the code has no character limit. + is 68, - 69, [ 70, ] 71, > 72, < 73, . 74')
 sel = 0
 success = False
 while not success:
@@ -190,8 +190,11 @@ while not success:
     cells = codeRan[0]
     sel = codeRan[1]
     Print = codeRan[2]
-    if(mainCode(Print,[0,0,0,0,0,0,0,0,0,0],0)[0][0] == 81):
-        success = True
+    if(list(Print).length() < 81):
+        if(mainCode(Print,[0,0,0,0,0,0,0,0,0,0],0)[0][0] == 81):
+            success = True
+        else:
+            print('Not quite, but what do you expect, it\'s pretty dang difficult')
     else:
-        print('Not quite, but what do you expect, it\s pretty dang difficult')
+        print('The printed code had 81 or more characters. The printed code can be at most 80 characters. Try again!')
 print('Amazing! If you did this without any converting script, I can\'t imagine the dedication you have')

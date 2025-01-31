@@ -91,7 +91,8 @@ while not success:
         cells = [0,0,0,0,0,0,0,0,0,0]
         sel = 0
 print('You did it! On to the next one')
-print('Now cell one will contain 5. With 3 characters get it to 0')
+print('Precondition: cell 1 is set to 5')
+print('With only 3 characters, set cell 1 to 0')
 #answer [-]
 sel = 0
 success = False
@@ -114,8 +115,9 @@ while not success:
         print('It needs to have 3 characters only, try again')
         sel = 0
         cells = [5,0,0,0,0,0,0,0,0,0]
+print('')
 print('You did it again! Get ready for the next one')
-print('This one is very similar to the previous, but every cell has a value of 5, and you get 4 characters to get them all to 0')
+print('This one is very similar to the previous, but every cell has a value of 5, and you only get 4 characters to get them all to 0')
 #answer [->]
 sel = 0
 success = False
@@ -166,7 +168,7 @@ while not success:
         print('It needs to have less than 50 characters only, try again')
         sel = 0
         cells = [0,0,0,0,0,0,0,0,0,0]
-print('Impressive, now on to the final tasks. Usually you need to know the ascii values to output characters. For this a is 1, b is 2, etc, z being 26')
+print('Impressive, now on to the final tasks. Usually you need to know the ascii values to output characters. For this a is 1, b is 2, ..., z is 26')
 print('Say hi')
 #an answer ++++++++.[-]+++++++++.[-]
 sel = 0
@@ -190,7 +192,7 @@ while not success:
             cells = [0,0,0,0,0,0,0,0,0,0]
     else:
         print('Uh oh I havent seen any code that bad, ever')
-print('For the ultimate challenge, print out brainF*** code that would result in 81 in cell 1, with less than 81 characters, but the code you write to write the code has no character limit. + is 68, - 69, [ 70, ] 71, > 72, < 73, . 74')
+print('You need to output a program, that if run would have 81 in the first cell. You may output no more than 80 characters, but the progrm you input has no character limit. + is 68, - 69, [ 70, ] 71, > 72, < 73, . 74')
 sel = 0
 success = False
 while not success:
